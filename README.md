@@ -29,3 +29,23 @@ gcc main.c -o main.o $(python3-config --includes) $(python3-config --ldflags)
 # Run
 $ ./main.o
 ```
+
+###### Cython
+
+```bash
+# Install
+$ pip3 install Cython
+```
+
+```bash
+$ cd c-call-python/cython
+
+# Build module, generates *.so, *.c, *.h in the same directory
+$ python3 setup.py build_ext --inplace
+
+# Build executable file (python3)
+$ gcc main.c speedup_dev_and_performance.c -o main.o $(python3-config --includes) $(python3-config --ldflags)
+
+# Run
+$ ./main.o
+```
