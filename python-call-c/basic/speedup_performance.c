@@ -1,5 +1,4 @@
 #include <Python.h>
-#include <stdio.h>
 
 // Actual method to be wrapped
 int slow_calc(int x, int a, int b) {
