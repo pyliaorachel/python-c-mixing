@@ -16,6 +16,18 @@ $ python3 setup.py build_ext --inplace
 $ python3 main.py
 ```
 
+###### ctypes
+
+```bash
+$ cd python-call-c/ctypes
+
+# Build shared library *.so
+$ gcc -shared -fPIC speedup_performance.c -o speedup_performance.so
+
+# Run
+$ python3 main.py
+```
+
 ###### SWIG
 
 ```bash
