@@ -31,6 +31,11 @@ $ python3 main.py
 ###### SWIG
 
 ```bash
+# Install (macOS with homebrew)
+$ brew install swig
+```
+
+```bash
 $ cd python-call-c/swig
 
 # Build python module with keyword arguments
