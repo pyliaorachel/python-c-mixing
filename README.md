@@ -16,6 +16,23 @@ $ python3 setup.py build_ext --inplace
 $ python3 main.py
 ```
 
+###### SWIG
+
+```bash
+$ cd python-call-c/swig
+
+# Build python module with keyword arguments
+# Generates *.py, *_wrap.c
+$ swig -python -keyword speedup_performance.i
+
+# Build shared object file *.so
+$ python3 setup.py build_ext --inplace
+
+# Run
+$ python3 main.py
+
+```
+
 ## C call Python
 
 ###### Basic
