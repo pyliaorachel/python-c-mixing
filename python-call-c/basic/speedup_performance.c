@@ -8,7 +8,7 @@ int slow_calc(int x, int a, int b) {
 // Define wrapper methods to be called in Python
 static PyObject *_slow_calc(PyObject *self, PyObject *args, PyObject *kwargs) {
     // Arguments
-    int x, a, b;
+    int x, a = 0, b = 0;
     static char *kwlist[] = {"x", "a", "b", NULL};
     // Return value
     int res;
