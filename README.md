@@ -2,6 +2,8 @@
 
 Examples of mixing Python and C.
 
+[\[中文講解\] 如Py似C：Python 與 C 的共生法則](https://pyliaorachel.github.io/blog/tech/python/2018/01/26/python-c-mixing.html)
+
 ## Python call C
 
 ###### Basic
