@@ -28,7 +28,7 @@ static PyObject *_slow_calc(PyObject *self, PyObject *args, PyObject *kwargs) {
 // Construct the Module's Method Table (list the methods to expose)
 static PyMethodDef SpeedupPerformanceMethods[] = {
     // slow_calc method takes in both positional & keyword parameters
-    {"slow_calc", _slow_calc, METH_VARARGS | METH_KEYWORDS, "A slow calculation method."},
+    {"slow_calc", (PyCFunction) _slow_calc, METH_VARARGS | METH_KEYWORDS, "A slow calculation method."},
     // Ends with an entry with NULL values
     {NULL, NULL, 0, NULL}
 };
