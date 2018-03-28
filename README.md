@@ -60,10 +60,10 @@ $ python3 main.py
 $ cd c-call-python/basic
 
 # Build executable file (python3)
-gcc main.c -o main.o $(python3-config --includes) $(python3-config --ldflags)
+$ gcc $(python3-config --cflags --ldflags) main.c -o main
 
 # Run
-$ ./main.o
+$ ./main
 ```
 
 ###### Cython
@@ -80,8 +80,8 @@ $ cd c-call-python/cython
 $ python3 setup.py build_ext --inplace
 
 # Build executable file (python3)
-$ gcc main.c speedup_dev_and_performance.c -o main.o $(python3-config --includes) $(python3-config --ldflags)
+$ gcc $(python3-config --cflags --ldflags) main.c speedup_dev_and_performance.c -o main
 
 # Run
-$ ./main.o
+$ ./main
 ```
